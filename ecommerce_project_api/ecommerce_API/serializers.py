@@ -18,13 +18,16 @@ class MenuItemSerializer(serializers.ModelSerializer):
 class CartSerializer(serializers.ModelSerializer):
     user = serializers.PrimaryKeyRelatedField(queryset = User.objects.all(), default= serializers.CurrentUserDefault())
     
-    def validate (value):
+    def validate(self, value):
         value['price'] = value['unit_price'] * value['stock']
         return value
     
     class Meta:
         model = Cart
         fields = ['user', 'menu_item', 'stock', 'unit_price', 'price']
+        extra_kwargs = {
+            'price':{'read_only': True}
+        }
         
 class OrderItemSerializer(serializers.ModelSerializer):
     class Meta:

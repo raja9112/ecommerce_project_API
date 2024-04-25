@@ -43,3 +43,18 @@ class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
         if self.request.method != 'GET':
             permission_classes = [IsAdminUser]
         return [permission() for permission in permission_classes]
+
+# In above codes even a anon users can view categories and menu_items but here the cart will be only viewed by authenticated users - customers
+# So first authenticate the user and list the cart of that particular user via get_query_set and for delete.
+class CartView(generics.ListCreateAPIView):
+    queryset = Cart.objects.all()
+    serializer_class = CartSerializer
+    permission_classes = [IsAuthenticated]
+    
+    def get_queryset(self):
+        return Cart.objects.all().filter(user = self.request.user)
+    
+    def delete(self, *args, **kwargs):
+        return Cart.objects.all().filter(user = self.request.user).delete()
+        return "Ok"
+    
