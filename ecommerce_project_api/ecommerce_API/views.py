@@ -18,7 +18,7 @@ class categoriesView(generics.ListCreateAPIView):
     def get_permissions(self):
         permission_classes = []
         if self.request.method != 'GET':
-            permission_classes = [IsAuthenticated]
+            permission_classes = [IsAdminUser]
             
         return [permission() for permission in permission_classes]
     
@@ -29,5 +29,5 @@ class MenuItemView(generics.ListCreateAPIView):
     def get_permissions(self):
         permission_classes= []
         if self.request.method != 'GET':
-            permission_classes = [IsAuthenticated]
+            permission_classes = [IsAdminUser]
         return [permission() for permission in permission_classes]
