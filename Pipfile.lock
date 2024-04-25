@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a264c031e636d49472dacd5a96c3b507edfcd635ec27dc4d92c9a20149644a6e"
+            "sha256": "f064a05a2024fc322affc813edace9f954c326f2a5a334657c32e32051813fcb"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -241,6 +241,13 @@
             "markers": "python_version >= '3.10'",
             "version": "==5.0.4"
         },
+        "django-filter": {
+            "hashes": [
+                "sha256:ea204242ea83790e1512c9d0d8255002a652a6f4986e93cee664f28955ba0c22",
+                "sha256:ec0ef1ba23ef95b1620f5d481334413700fb33f45cd76d56a63f4b0b1d76976a"
+            ],
+            "version": "==1.1.0"
+        },
         "django-templated-mail": {
             "hashes": [
                 "sha256:8db807effebb42a532622e2d142dfd453dafcd0d7794c4c3332acb90656315f9",
@@ -256,6 +263,14 @@
             "index": "pypi",
             "markers": "python_version >= '3.6'",
             "version": "==3.15.1"
+        },
+        "djangorestframework-filters": {
+            "hashes": [
+                "sha256:a7683bfbeb4eb2a246fbba830f80062fcff9697101ca87a8b7327346284aa518",
+                "sha256:f9249bd6440574ff8788a8994407bf5974e461fbcf65c0bd4785f9e71836768a"
+            ],
+            "index": "pypi",
+            "version": "==0.11.1"
         },
         "djangorestframework-simplejwt": {
             "hashes": [
@@ -337,6 +352,15 @@
             ],
             "markers": "python_version >= '3.4'",
             "version": "==2.0.0"
+        },
+        "six": {
+            "hashes": [
+                "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+                "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==1.16.0"
         },
         "social-auth-app-django": {
             "hashes": [

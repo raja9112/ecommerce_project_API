@@ -8,6 +8,8 @@ django = "*"
 djangorestframework = "*"
 djoser = "*"
 djangorestframework-xml = "*"
+djangorestframework-filters = "*"
+six = "*"
 
 [dev-packages]
 
