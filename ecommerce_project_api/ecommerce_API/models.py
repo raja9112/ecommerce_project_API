@@ -35,8 +35,8 @@ class Order(models.Model):
     date = models.DateField(db_index=True)
     
 class OrderItem(models.Model):
-    order = models.ForeignKey(Order, on_delete=models.PROTECT, related_name='order')
-    menu_item = models.ForeignKey(MenuItem, on_delete=models.PROTECT)
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order')
+    menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)
     quantity = models.SmallIntegerField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     
