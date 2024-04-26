@@ -69,19 +69,19 @@ pipenv install django djangorestframework
 Here are the screenshots of the API endpoints tested in Insomnia and in Browser:
 
 #### Creating category using Admin token
-![alt text](Screen shots/image.png)
+![alt text](Screen%20shots/image.png)
 
 #### Creating category using non-admin or non-staff token
-![alt text](Screen shots/image-1.png)
+![alt text](Screen%20shots/image-1.png)
 
 #### Listing menu items -> GET method
-![alt text](Screen shots/image-2.png)
+![alt text](Screen%20shots/image-2.png)
 
 #### Creating menu-items using admin token -> POST method
-![alt text](Screen shots/image-3.png)
+![alt text](Screen%20shots/image-3.png)
 
 #### Retriving single order
-![alt text](Screen shots/image-4.png)
+![alt text](Screen%20shots/image-4.png)
 
 #### Listing all orders
-![alt text](Screen shots/image-5.png)
+![alt text](Screen%20shots/image-5.png)
