@@ -25,41 +25,44 @@ pipenv install django djangorestframework
 
 ## API Endpoints
 ```bash
-/api/categories/ (GET, POST): Endpoint for retrieving and creating categories.
-/api/Menu-Items/ (GET, POST): Endpoint for retrieving and creating menu items.
-/api/MenuItem/<int:pk>/ (GET, PUT, DELETE): Endpoint for retrieving, updating, and deleting a specific menu item.
-/api/Cart/ (GET, POST): Endpoint for retrieving and creating items in the cart.
-/api/Orders/ (GET, POST): Endpoint for retrieving and creating orders.
-/api/Order/<int:pk>/ (GET, PUT, DELETE): Endpoint for retrieving, updating, and deleting a specific order.
-/api/groups/manager/users (GET, POST, DELETE): Endpoint for listing, creating, and deleting users in the manager group.
-/api/groups/delivery-crew/users (GET, POST, DELETE): Endpoint for listing, creating, and deleting users in the delivery crew group.
+/api/categories/ #(GET, POST): Endpoint for retrieving and creating categories.
+/api/Menu-Items/ #(GET, POST): Endpoint for retrieving and creating menu items.
+/api/MenuItem/<int:pk>/ #(GET, PUT, DELETE): Endpoint for retrieving, updating, and deleting a specific menu item.
+/api/Cart/ #(GET, POST): Endpoint for retrieving and creating items in the cart.
+/api/Orders/ #(GET, POST): Endpoint for retrieving and creating orders.
+/api/Order/<int:pk>/ #(GET, PUT, DELETE): Endpoint for retrieving, updating, and deleting a specific order.
+/api/groups/manager/users #(GET, POST, DELETE): Endpoint for listing, creating, and deleting users in the manager group.
+/api/groups/delivery-crew/users #(GET, POST, DELETE): Endpoint for listing, creating, and deleting users in the delivery crew group.
 ```
 
 ## Features
 ### Admin Features
-Assign users to the manager group.
-Add menu items.
-Add categories.
+1. Assign users to the manager group.
+2. Add menu items.
+3. Add categories.
+
 ### Manager Features
-Log in.
-Update the item of the day.
-Assign users to the delivery crew.
-Assign orders to the delivery crew.
+1. Log in.
+2. Update the item of the day.
+3. Assign users to the delivery crew.
+4. Assign orders to the delivery crew.
+
 ### Delivery Crew Features
-Access orders assigned to them.
-Update an order as delivered.
+1. Access orders assigned to them.
+2. Update an order as delivered.
+
 ### Customer Features
-Register.
-Log in using their username and password and get access tokens.
-Browse all categories.
-Browse all the menu items at once.
-Browse menu items by category.
-Paginate menu items.
-Sort menu items by price.
-Add menu items to the cart.
-Access previously added items in the cart.
-Place orders.
-Browse their own orders.
+1. mRegister.
+2. Log in using their username and password and get access tokens.
+3. Browse all categories.
+4. Browse all the menu items at once.
+5. Browse menu items by category.
+6. Paginate menu items.
+7. Sort menu items by price.
+8. Add menu items to the cart.
+9. Access previously added items in the cart.
+10. Place orders.
+11. Browse their own orders.
 
 
 ## Insomnia Testing
